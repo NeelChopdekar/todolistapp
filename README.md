@@ -1,16 +1,28 @@
-# React + Vite
+# To-Do List Application (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A functional Task Management app built using **React.js** and **Vite**. This project focuses on state management, persistent storage, and automated task repeats.
 
-Currently, two official plugins are available:
+## 📋 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Task Management**: Add, complete, and delete tasks.
+* **Persistent Storage**: Uses `localStorage` to save tasks so they remain after a page refresh.
+* **Deadline Tracking**: Real-time display of time remaining for each task.
+* **Recurring Tasks**: Supports "Hourly," "Daily," and "Weekly" repeats. When a recurring task is completed, a new one is automatically generated for the next time slot.
+* **Filtering**: Separate tabs to view "Pending" tasks versus "Completed" tasks.
+* **Urgent Task Header**: A scrolling marquee that displays the task with the closest deadline.
 
-## React Compiler
+## 🛠️ Technical Details
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Framework**: React (Functional Components)
+* **State Management**: `useState` hook for handling the task list and active tabs.
+* **Side Effects**: `useEffect` hook for the 60-second timer interval and LocalStorage synchronization.
+* **Styling**: Standard CSS with a dark theme and basic animations.
 
-## Expanding the ESLint configuration
+## 🚀 How to Run
+Follow these steps to run the project on your local machine:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Clone the repository
+```bash
+git clone [https://github.com/NeelChopdekar/todolistapp.git](https://github.com/NeelChopdekar/todolistapp.git)
+npm install
+npm run dev
