@@ -21,8 +21,7 @@ A functional Task Management app built using **React.js** and **Vite**. This pro
 ## 🚀 How to Run
 Follow these steps to run the project on your local machine:
 
-### 1. Clone the repository
 ```bash
-git clone [https://github.com/NeelChopdekar/todolistapp.git](https://github.com/NeelChopdekar/todolistapp.git)
+git clone https://github.com/NeelChopdekar/todolistapp.git
 npm install
 npm run dev
