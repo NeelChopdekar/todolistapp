@@ -23,5 +23,6 @@ Follow these steps to run the project on your local machine:
 
 ```bash
 git clone https://github.com/NeelChopdekar/todolistapp.git
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 npm install
 npm run dev
